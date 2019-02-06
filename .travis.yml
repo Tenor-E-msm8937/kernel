@@ -29,4 +29,4 @@ script:
   - make ARCH=arm64 Image.gz-dtb O=out/
   
 after_success:
-  - curl --upload-file ./Image.gz-dtb https://transfer.sh/10ore_kernel
+  - curl --upload-file out/arch/arm64/boot/Image.gz-dtb https://transfer.sh/10ore_kernel
